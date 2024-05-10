@@ -25,7 +25,6 @@ class nabijena_cestica:
         lista_z=[] 
         while timer<1000:
             timer=timer+self.dt
-            #namistas kod
             a=(float(self.q)/self.m)*(self.E+np.cross(self.brzina,self.B))
             self.brzina=self.brzina+self.dt*(a)
             self.pomak()
